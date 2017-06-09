@@ -294,12 +294,18 @@ body {
   line-height: 30px;
 }
 #radio1:checked ~ .slider-container {
+  -webkit-transform: 0%;
+  -moz-transform: 0%;
   transform: translateX(0%);
 }
 #radio2:checked ~ .slider-container {
+  -webkit-transform: 33.3%;
+  -moz-transform: 33.3%;
   transform: translateX(-33.3%);
 }
 #radio3:checked ~ .slider-container {
+  -webkit-transform: 66.6%;
+  -moz-transform: 66.6%;
   transform: translateX(-66.6%);
 }
 section.price {
@@ -373,18 +379,26 @@ section.price {
   position: absolute;
   left: 2%;
   top: 22px;
+  -webkit-transform: -45deg;
+  -moz-transform: -45deg;
   transform: rotate(-45deg);
   content: "ХИТ";
   font-size: 14px;
 }
 /* СЛАЙДЕР ПРАЙС ТАБЛИЦА*/
 #radio4:checked ~ .slider-container {
+  -webkit-transform: 0%;
+  -moz-transform: 0%;
   transform: translateX(0%);
 }
 #radio5:checked ~ .slider-container {
+  -webkit-transform: -28.5%;
+  -moz-transform: -28.5%;
   transform: translateX(-28.5%);
 }
 #radio6:checked ~ .slider-container {
+  -webkit-transform: -60%;
+  -moz-transform: -60%;
   transform: translateX(-60%);
 }
 section.contacts {
@@ -421,6 +435,18 @@ section.contacts span {
   font-weight: 300;
   color: #d22856;
 }
+section.contacts::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  border: 35px solid #fff;
+  border-top: 100px solid #fff;
+  border-bottom: 0;
+  border-left: solid 50vw transparent;
+  border-right: solid 50vw transparent;
+  z-index: 20;
+}
 section.map {
   min-width: 320px;
   width: 100%;
@@ -452,23 +478,31 @@ section.map svg {
 }
 /*СТИЛИ КНОПОК СЛАЙДЕРА*/
 .slider-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   width: 70px;
   margin: 35px auto;
   height: 10px;
+}
+.slider-controls::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .slider input,
 .price input {
   display: none;
 }
 .slider-controls label {
+  float: left;
   cursor: pointer;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background-color: #c2c6ca;
+  margin-right: 20px;
+}
+.slider-controls label:last-child {
+  margin-right: 0;
 }
 #radio1:checked ~ .slider-controls label[for="radio1"],
 #radio2:checked ~ .slider-controls label[for="radio2"],
