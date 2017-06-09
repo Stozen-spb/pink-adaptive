@@ -238,6 +238,7 @@ body {
   margin: 0 auto;
 }
 .features-image {
+  width: 157px;
   display: block;
   margin: 50px auto -42px auto;
 }
