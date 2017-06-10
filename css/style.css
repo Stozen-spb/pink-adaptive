@@ -15,41 +15,35 @@ body {
 .header {
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   background-color: #1d2631;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-position: top center;
   background-repeat: no-repeat;
+  -webkit-background-size: 100% 105vw ;
+  background-size: 100% 105vw ;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   .header {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  .header {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 .header ul {
   position: absolute;
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   .header ul {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  .header ul {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 .menu-item {
@@ -111,11 +105,17 @@ body {
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+.menu-item .menu-close:hover::before {
+  background-color: #d22856;
+}
+.menu-item .menu-close:hover::after {
+  background-color: #d22856;
+}
 .handled {
   display: block;
-  width: 258px;
-  padding-top: 175px;
-  margin: 0px auto 28px auto;
+  width: 80%;
+  padding-top: 19.8%;
+  margin: 0px auto 28px 0;
 }
 .download-btn {
   display: block;
@@ -124,6 +124,7 @@ body {
   padding: 10px 35px;
   color: #fff;
   font-size: 18px;
+  text-align: center;
   border: solid 2px #fff;
   border-radius: 30px;
   margin-top: 30px;
@@ -133,6 +134,9 @@ body {
 .download-btn:hover {
   background-color: #fff;
   color: #d22856;
+}
+.download-btn:active {
+  color: #f2ced5;
 }
 .OS-images {
   display: flex;
@@ -183,25 +187,25 @@ body {
   content: "";
   display: none;
 }
+.hidden .menu-close:hover::before {
+  box-shadow: 0px 10px 0px #d22856,
+		0px 20px 0px #d22856;
+}
 .slogan {
   position: relative;
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 55px;
   background-color: #fff;
   overflow: hidden;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   .slogan {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  .slogan {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 .slogan h1 {
@@ -223,19 +227,15 @@ body {
 .features {
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   background-color: #f2f2f2;
   overflow: hidden;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   .features {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  .features {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 .features h1 {
@@ -258,19 +258,15 @@ body {
   position: relative;
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   padding-top: 30px;
   overflow: hidden;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   .slider {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  .slider {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 .slider::after {
@@ -316,19 +312,15 @@ body {
 section.price {
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   background-color: #f2f2f2;
   overflow: hidden;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   section.price {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  section.price {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 .price .slider-container {
@@ -409,20 +401,16 @@ section.price {
 section.contacts {
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   text-align: center;
   position: relative;
   padding-bottom: 10px;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   section.contacts {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  section.contacts {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 section.contacts h1 {
@@ -455,18 +443,14 @@ section.contacts::after {
 section.map {
   min-width: 320px;
   width: 100%;
-  max-width: 760px;
+  max-width: 690px;
   margin: 0 auto;
   position: relative;
 }
-@media (@min-width: 768px) {
+@media (min-width: 700px) {
   section.map {
-    width: 0px;
-  }
-}
-@media (@min-width: 900px) {
-  section.map {
-    width: 0px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 section.map svg {
@@ -508,6 +492,9 @@ section.map svg {
 }
 .slider-controls label:last-child {
   margin-right: 0;
+}
+.slider-controls label:hover {
+  background-color: #7e868f;
 }
 #radio1:checked ~ .slider-controls label[for="radio1"],
 #radio2:checked ~ .slider-controls label[for="radio2"],
