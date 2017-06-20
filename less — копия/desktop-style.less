@@ -1,0 +1,280 @@
+@media @desktop-width {
+
+#logo-pink-mobile{
+display: none;	
+}
+
+#logo-pink-tablet {
+display: none;	
+}
+
+#logo-pink-desktop {
+display: block;	
+margin-left: 0px;
+margin-top: -15px;
+}
+
+.menu-item .menu-close {
+display: none;
+}
+
+svg:hover .spark {
+fill: #fff;	
+}
+
+.header ul {
+display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgba(0,0,0,.35);	
+}
+
+
+.hidden .menu-item:nth-child(n) {
+background-color: transparent;
+display: block;
+border: none;
+text-transform: capitalize;
+}
+
+.header {
+background-image: url('../img/iphone-6-desktop.png'), url('../img/promo-header_bgr-blue-desktop-min.jpg');	
+background-size: auto 75%, 100% 100%;
+min-height: 660px;
+height: 49vw;
+}
+
+.header-slogan {
+margin-left: 165px;
+margin-bottom: 70px;
+font-size: 50px;	
+}
+
+.OS-images {
+margin-left: 200px;	
+}
+
+.header p {
+margin-left: 165px;	
+}
+
+.slogan {
+padding: 80px 0px;
+	& h1 {
+padding-top: 0px;		
+font-size: 50px;
+font-weight: bold;	
+}
+
+}
+
+.features {
+padding-top:260px;	
+}
+
+.features .feature {
+	width: 240px;
+	
+}
+
+.features .features-container {
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+justify-content: space-between;
+width: 80%;
+margin-left:10%;
+margin-right: 10%;
+
+& h1 {
+		text-align: center;
+		font-size: 30px;
+		&:first-child {
+		padding-top:0px;	
+		}
+	}
+& p {	
+		font-size: 18px;
+		text-align: center;
+	}	
+
+}
+
+.features-image {
+position: absolute;
+margin-right: 10%;
+margin-left: auto;
+left: 0;
+right: 0;
+top:-20%;
+
+
+width: 250px;
+height: 300px;
+max-width: 250px;
+ 	
+}
+
+.features-image2 {
+position: absolute;
+display: block;
+left: 10%;
+top:-10%;
+width: 250px;
+height: 300px;	
+}
+
+.features-image3 {
+position: absolute;
+display: block;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top:-10%;
+width: 250px;
+height: 300px;	
+}
+
+.promo-fact {
+padding-bottom:120px; 
+background-color: #f2f2f2;
+background-size: 300px 354px;
+& a {
+		color: @pink;
+		margin-left: 40%;
+		font-size: 18px;
+ 	}	
+
+
+}
+
+.promo-fact .fact-header {
+width: 300px;
+margin-left: 40%;
+}
+
+
+.promo-fact .fact-text {
+width: 45%;
+margin-left: 40%;
+padding-bottom: 15px;
+font-size: 18px;
+line-height: 30px;	
+}
+
+.slider {	
+padding-top: 180px;
+padding-bottom:55px;
+background-image: url(../img/quotes.svg);
+background-repeat: no-repeat;
+background-position: center 65px;	
+}
+
+.slider .slider-controls {
+display: none;		
+}
+
+.slider-desktop-controls {
+display: block;
+font-size: 40px;
+font-weight: bold;
+cursor: pointer;
+-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;	
+}
+
+.slider-desktop-controls.left {
+position: absolute;
+left:25%;
+top:220px;
+z-index: 10;	
+}
+
+.slider-desktop-controls.right {
+position: absolute;
+right:25%;
+top:220px;
+z-index: 10;	
+}
+
+.slider-item {
+& p {
+	display: block;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px;
+	}
+
+& h2 {
+	font-size: 24px;	
+	}
+
+& .bio-info {
+	font-size: 18px;	
+	}
+}
+
+
+
+
+
+.price .slider-container {
+width: 70%;
+margin-left:auto;
+margin-right: auto;	
+}
+
+.table-price {
+ & th {
+
+ }	
+ & td {
+ 	font-size: 18px;
+ }
+}
+
+section.contacts {
+
+	& h1 {
+	
+		font-weight: bold;
+		color: #283645;
+		 }	
+
+	& h2 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;	
+		 }
+
+	& span {
+		font-size: 20px;
+		font-weight: 300;
+		color: #d22856;
+	}
+}
+
+.contacts-info {
+display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 60%;
+	margin: 0 auto;
+	& .call { order:1; }
+	& .meet { margin-top: 0; order:2;}
+	& .write {order:3;}
+}
+
+
+} /* Скобка медиавыражений*/
