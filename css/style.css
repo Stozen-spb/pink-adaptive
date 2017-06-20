@@ -595,12 +595,318 @@ section.map svg {
 .footer {
   display: none;
 }
+/* Стили странички конкурса  и футер*/
+.mobile-hidden {
+  display: none;
+}
+.concurs-slogan {
+  padding: 100px 45px 50px 45px;
+  text-align: center;
+}
+.concurs-slogan h1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+.person-name {
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+.concurs-info h2 {
+  width: 90%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #283645;
+}
+h2.form-h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+.inputs-container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.person-name label {
+  color: #d22856;
+  text-transform: uppercase;
+}
+.person-name input {
+  display: block;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 25px 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #283645;
+}
+/*  ЦВЕТ ПЛЕЙСХОЛДЕРА*/
+input::-moz-placeholder {
+  color: #283645;
+  font-size: 18px;
+  opacity: 1.0;
+}
+input::-webkit-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  opacity: 1.0;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #d22856;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid #d22856;
+}
+.achievements {
+  box-sizing: border-box;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+}
+.achievements label {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  color: #283645;
+  margin-top: 50px;
+  padding-left: 70px;
+}
+.achievements input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border: solid 2px #eee;
+  border-radius: 2px;
+}
+input[type="checkbox"]:checked + label::after {
+  content: "✓";
+  position: absolute;
+  top: -14px;
+  left: 6px;
+  font-size: 38px;
+  color: #d22856;
+}
+.person-contacts {
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+.person-contacts label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+.person-contacts input {
+  display: block;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 25px 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #283645;
+}
+.pink-os-type {
+  box-sizing: border-box;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+}
+.pink-os-type label {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  color: #283645;
+  margin-top: 50px;
+  padding-left: 70px;
+}
+.pink-os-type input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border: solid 2px #eee;
+  border-radius: 50%;
+}
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+  z-index: 10;
+}
+.emotion-review {
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+.emotion-review .inputs-container {
+  width: 80%;
+}
+.emotion-review textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 20px;
+  font-size: 18px;
+  color: #283645;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.send-form {
+  display: block;
+  width: 280px;
+  background-color: #2aab6d;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0px ;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+.form-rules-informer {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #283645;
+}
+.form-rules-informer span {
+  color: #d22856;
+}
+.footer.concurs-footer {
+  display: block;
+}
+.footer {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  background-color: #fff;
+}
+@media (min-width: 700px) {
+  .footer {
+    width: 100%;
+  }
+}
+@media (min-width: 1080px) {
+  .footer {
+    width: 100%;
+  }
+}
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer a:active {
+  opacity: 0.3;
+}
+.logo-footer {
+  display: block;
+  width: 147px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+svg:hover .logo-svg-text {
+  fill: #d22856;
+}
+.footer .social {
+  width: 187px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.footer .social::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.social .icon {
+  display: block;
+  float: left;
+  width: 48px;
+  height: 48px;
+  border: solid 2px #f2f2f2;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.social .icon:last-child {
+  margin-right: 0px;
+}
+.social .icon:hover {
+  border: solid 2px rgba(0, 0, 0, 0.7);
+}
+.social .twitter {
+  background-image: url(../img/icon-twitter.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.social .facebook {
+  background-image: url(../img/icon-facebook.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.social .youtube {
+  background-image: url(../img/icon-youtube.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.footer .author {
+  display: block;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 52px;
+  padding: 0px 20px;
+  color: #d22856;
+  text-decoration: none;
+  border: solid 2px #f2f2f2;
+  border-radius: 30px;
+}
+.footer .author:hover {
+  border: solid 2px rgba(0, 0, 0, 0.7);
+}
 @media (min-width: 700px) {
   .header {
     height: 730px;
     background-image: url('../img/iphone-hand-mobile@1x.png'), url('../img/bg-back-mobile@1x.jpg');
     background-position: 80% bottom, top center;
     background-size: auto 75%, auto 100%;
+  }
+  .header.form-header {
+    background-image: url('../img/bg-back-mobile@1x.jpg');
+    background-position: top center;
+    background-size: 100% auto;
+    height: auto;
   }
   .logo-pink-mobile {
     display: none;
@@ -775,84 +1081,236 @@ section.map svg {
   }
   .footer {
     display: block;
-    min-width: 320px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 35px 40px;
-    background-color: #fff;
+    position: relative;
   }
-  .footer::after {
+  .logo-footer {
+    float: left;
+    margin-bottom: 0px;
+  }
+  .footer .social {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .author {
+    float: right;
+    margin: 0;
+  }
+  /*стили страницы куонкурса*/
+  .mobile-hidden {
+    display: block;
+  }
+  .tablet-hidden {
+    display: none;
+  }
+  /* Убираем текст плейсхолдера, далее будут псевдоплейсхолдеры через псевдоэлементы*/
+  .person-contacts input::-moz-placeholder {
+    color: #283645;
+    font-size: 0px;
+    opacity: 1.0;
+  }
+  .person-contacts input::-webkit-input-placeholder {
+    color: #283645;
+    font-size: 0px;
+    opacity: 1.0;
+  }
+  .concurs-slogan {
+    padding: 140px 115px 80px 115px;
+    text-align: center;
+  }
+  .concurs-slogan h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+  }
+  .wrapper-concurs {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .inputs-container {
+    width: 100%;
+  }
+  .concurs-info h2 {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .person-name {
+    order: 1;
+    padding: 40px 0px;
+  }
+  .person-name::after {
     content: "";
     display: table;
     clear: both;
   }
-  .footer a:active {
-    opacity: 0.3;
+  .person-name .inputs-container {
+    vertical-align: baseline;
   }
-  .logo-footer {
+  .person-name .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .person-name label {
     float: left;
+    clear: left;
+    margin-right: 20px;
+    line-height: 72px;
   }
-  svg:hover .logo-svg-text {
-    fill: #d22856;
-  }
-  .footer .social {
-    width: 187px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .social .icon {
-    display: block;
-    float: left;
-    width: 48px;
-    height: 48px;
-    border: solid 2px #f2f2f2;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
-  .social .icon:last-child {
-    margin-right: 0px;
-  }
-  .social .icon:hover {
-    border: solid 2px rgba(0, 0, 0, 0.7);
-  }
-  .social .twitter {
-    background-image: url(../img/icon-twitter.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .social .facebook {
-    background-image: url(../img/icon-facebook.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .social .youtube {
-    background-image: url(../img/icon-youtube.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .footer .author {
+  .person-name input {
     float: right;
-    font-size: 18px;
-    line-height: 52px;
-    padding: 0px 20px;
-    color: #d22856;
-    text-decoration: none;
-    border: solid 2px #f2f2f2;
-    border-radius: 30px;
+    width: 84.6%;
+    margin-top: 0px;
+    margin-bottom: 25px;
   }
-  .footer .author:hover {
-    border: solid 2px rgba(0, 0, 0, 0.7);
+  #firstname {
+    width: 89.7%;
   }
-}
-@media (min-width: 700px) and (min-width: 700px) {
-  .footer {
-    width: 100%;
+  .achievements {
+    position: relative;
+    background-color: #fff;
+    border: solid #f2f2f2 2px;
+    order: 4;
+    margin-bottom: 70px;
   }
-}
-@media (min-width: 700px) and (min-width: 1080px) {
-  .footer {
-    width: 100%;
+  .achievements h2:first-of-type {
+    position: absolute;
+    background-color: #fff;
+    width: 400px;
+    left: 0;
+    right: 0;
+    top: -22px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pink-os-type {
+    order: 2;
+    position: relative;
+    background-color: #fff;
+    border: solid #f2f2f2 2px;
+    padding-top: 10px;
+    margin-bottom: 70px;
+  }
+  .pink-os-type h2:first-of-type {
+    position: absolute;
+    background-color: #fff;
+    width: 400px;
+    left: 0;
+    right: 0;
+    top: -22px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .person-contacts {
+    position: relative;
+    background-color: #fff;
+    border: solid #f2f2f2 2px;
+    padding-top: 10px;
+    margin-bottom: 70px;
+    order: 3;
+  }
+  .person-contacts .mobile-hidden {
+    float: left;
+  }
+  .person-contacts h2:first-of-type {
+    position: absolute;
+    background-color: #fff;
+    width: 280px;
+    left: 0;
+    right: 0;
+    top: -22px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .person-contacts .inputs-container {
+    width: 470px;
+    float: left;
+  }
+  .person-contacts input {
+    position: relative;
+    width: 450px;
+    margin-bottom: 0px;
+    padding: 15px 20px;
+  }
+  input.number + span::before {
+    content: "+7 ХХХ ХХХ-ХХ-ХХ";
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    z-index: 10;
+  }
+  input.number + span::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 408px;
+    width: 60px;
+    height: 55px;
+    background-color: #f2f2f2;
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+  }
+  input.number:focus + span::before {
+    content: "";
+  }
+  input.email + span::before {
+    content: "Введите почту";
+    position: absolute;
+    top: 175px;
+    left: 40px;
+    z-index: 10;
+  }
+  input.email + span::after {
+    content: "";
+    position: absolute;
+    top: 157px;
+    left: 408px;
+    width: 60px;
+    height: 55px;
+    background-color: #f2f2f2;
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+  }
+  input.email:focus + span::before {
+    content: "";
+  }
+  .emotion-review {
+    position: relative;
+    background-color: #fff;
+    border: solid #f2f2f2 2px;
+    padding-top: 50px;
+    order: 5;
+  }
+  .emotion-review h2:first-of-type {
+    position: absolute;
+    background-color: #fff;
+    width: 280px;
+    left: 0;
+    right: 0;
+    top: -22px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .send-form {
+    float: left;
+  }
+  .form-rules-informer {
+    float: right;
+    margin-top: 25px;
   }
 }
 /* скобочка медивыражений*/
@@ -945,21 +1403,21 @@ section.map svg {
   }
   .features-image {
     position: absolute;
-    margin-right: 10%;
+    margin-right: 8%;
     margin-left: auto;
     left: 0;
     right: 0;
     top: -20%;
-    width: 250px;
+    width: 292px;
     height: 300px;
-    max-width: 250px;
+    max-width: 292px;
   }
   .features-image2 {
     position: absolute;
     display: block;
-    left: 10%;
+    left: 8.7%;
     top: -10%;
-    width: 250px;
+    width: 292px;
     height: 300px;
   }
   .features-image3 {
@@ -970,7 +1428,7 @@ section.map svg {
     left: 0;
     right: 0;
     top: -10%;
-    width: 250px;
+    width: 292px;
     height: 300px;
   }
   .promo-fact {
@@ -1082,6 +1540,63 @@ section.map svg {
   }
   .contacts-info .write {
     order: 3;
+  }
+  /*стили страницы конкурса*/
+  .concurs-slogan {
+    padding-top: 240px;
+  }
+  .wrapper-concurs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .concurs-info h2 {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    font-size: 20px;
+    z-index: 10;
+  }
+  .person-name {
+    flex-basis: 50%;
+    padding: 20px;
+    padding-top: 160px;
+    box-sizing: border-box;
+  }
+  .person-name input {
+    width: 70%;
+    padding: 15px 20px;
+  }
+  #firstname {
+    width: 70%;
+  }
+  .person-contacts {
+    flex-basis: 50%;
+    order: 2;
+    margin-top: 130px;
+    margin-bottom: 0;
+    border: none;
+  }
+  .achievements {
+    order: 3;
+    flex-basis: 50%;
+  }
+  .pink-os-type {
+    order: 4;
+    flex-basis: 50%;
+    border-left: none;
+  }
+  .emotion-review {
+    flex-basis: 100%;
+  }
+  .send-form-container {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* Скобка медиавыражений*/

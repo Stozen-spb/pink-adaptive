@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-<section class="header">
+<section class="header form-header">
 
 <ul class="main-menu ">
 	<li class="menu-item">
@@ -101,216 +101,81 @@
 		</a>
 		<button class="menu-close" type="button" id="main-menu-close">Закрыть</button>
 	</li>
-	<li class="menu-item"><a>главная</a></li>
+	<li class="menu-item"><a href="index.html">главная</a></li>
 	<li class="menu-item"><a href="#">фотографии</a></li>
-	<li class="menu-item"><a href="form-page.html">конкурс</a></li>
+	<li class="menu-item"><a >конкурс</a></li>
 	<li class="menu-item"><a href="#">HTML academy</a></li>
 </ul>
-
-	
-	<img src="img/iphone-hand-mobile@1x.png" width="258" alt="" class="handled">
-
-	<div class="header-slogan"><h1>Взгляните на жизнь иначе!</h1>
-		<div class="download-btn">Скачать приложение</div>
-	</div>	
-	<div class="OS-images">
-		<a href="#"><img class="applelogo" src="img/logo-apple.svg" width="50" alt=""></a>
-		<a href="#"><img class="andoidlogo" src="img/logo-android.svg" width="50" alt=""></a>
-		<a href="#"><img class="microsoftlogo" src="img/logo-microsoft.svg" width="50" alt=""></a>
-	</div>
-	<p class="OS-descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+	<div class="concurs-slogan"><h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+		
 </section>
-<section class="slogan">
-	<h1> Устали от серости мегаполиса?</h1>
-	<h1 class="short">Нам есть, что вам предложить!</h1>
-</section>
-<section class="features">
-	<div class="features-container">
-		<div class="feature">
-			<h1>Поднимает настроение</h1>
-			<p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+<form action="/echo" method="post" class="wrapper-concurs">
+	<section class="person-name">
+		<div class="concurs-info">
+			<h2>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="mobile-hidden"> Пожалуйста, заполните форму ниже:</span> </h2>
 		</div>
-		<div class="feature">	
-			<h1>Меняет мир вокруг</h1>
-			<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+		<div class="inputs-container">
+			<div class="container">
+				<label for="lastname">Фамилия:</label> 
+				<input type="text" name="lastnaeme" id="lastname" placeholder="Укажите фамилию">
+			</div>
+			<div class="container">	 
+				<label for="firstname">Имя:</label> 
+				<input type="text" name="firstnaeme" id="firstname" placeholder="Введите ваше имя">
+			</div>
+			<div class="container">	
+				<label for="patronymic">Отчество:</label> 
+				<input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+			</div>		
 		</div>
-		<div class="feature">	
-			<h1>Заводит новых друзей</h1>
-			<p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+	</section>
+	<section class="achievements">
+		<h2 class="form-h2">Ваши безбашенные достижения в путушествии</h2>
+		<div class="inputs-container">
+			<input type="checkbox" id="sharkselfie" checked> <label for="sharkselfie">Сделал селфи с акулой</label>	<br>
+			<input type="checkbox" id="sun-burn" checked> <label for="sun-burn"> Обгорел на пляже </label>	<br>
+			<input type="checkbox" id="saw-chack"> <label for="saw-chack"> Видел Чака Норриса</label>	<br>
+			<input type="checkbox" id="souvenirs"> <label for="souvenirs"> Накупил сувениров</label>	<br>
+			<input type="checkbox" id="holded-tower" checked> <label for="holded-tower"> Удержал башню</label>	<br>
+			<input type="checkbox" id="hotel-destroed"> <label for="hotel-destroed"> Разгромил отель</label>	<br>
 		</div>	
+	</section>
+	<section class="person-contacts">
+	<h2 class="form-h2 mobile-hidden">Контактная информация</h2>
+		<div class="inputs-container">
+			<label for="person-lelephone" class="tablet-hidden"> Номерок Телефончика</label> <br>
+			<input type="text" placeholder="Номер, пожалуйста" class="number"><span></span> <br>
+			<label for="person-lelephone " class="mobile-hidden"> Номер телефона</label>
+			<label for="person-email" class="tablet-hidden"> Адресок почты</label> <br>
+			<input type="email" placeholder="E-mail, пожалуйста" class="email"><span></span> <br>
+			<label for="person-email"  class="mobile-hidden"> Адрес почты</label>
 		</div>
-	<picture>
-		<source  media="(min-width:1080px)" srcset="img/features-item-original.png">
-		<img class="features-image2"  src="" width="0" height="0" alt="" >
-	</picture>
-	<picture>
-		<source  media="(min-width:1080px)" srcset="img/features-item-filter.png">
-		<img class="features-image3"  src="" width="0" height="0" alt="" >
-	</picture>	
-	<picture>
-		<source class="features-image" media="(min-width:1080px)" srcset="img/features-item-filter-and-smile.png">
-		<img class="features-image" src="img/iphone-screen-mobile@1x.png" width="157" alt="" >
-	</picture>	
-</section>
+	</section>	
+	<section class="pink-os-type">
+	<h2 class="form-h2">С каким приложением путешествовали?</h2>
+		<div class="inputs-container">
+			<input type="radio" name="pink-os" id="pink-iOS" checked> <label for="pink-iOS">Pink для iOS</label> <br>
+			<input type="radio" name="pink-os" id="pink-android"> <label for="pink-android">Pink на Android</label><br>
+			<input type="radio" name="pink-os" id="pink-windows-phone"> <label for="pink-windows-phone">Windows Phone</label> <br>
+		</div>	
+	</section>
+	<section class="emotion-review">
+		<h2 class="form-h2">Опишите свои эмоции</h2>
+			<div class="inputs-container">
+				 <textarea name="emotiontext" id="emotiontext" cols="30" rows="7">Можно прям в красках, не стесняясь в выражениях
+				 </textarea>  <br>
+			</div>
+		<div class="send-form-container">	 
+			<button type="submit" class="send-form">Отправить форму</button>
 
-<section class="promo-fact">
-	<h1 class="fact-header">Эффект на&nbsp;24&nbsp;часа!</h1>
-	<p class="fact-text">Британские ученые провели исследования
-						и доказали, что положительный эффект
-						от использования приложения длится 
-						целые сутки!</p>
-	<a href="#"> Узнать больше об исследовании</a>
-</section>
-
-<section class="slider" id="slider-review">
-	<input type="radio" name="review" id="radio1" checked>
-	<input type="radio" name="review" id="radio2">
-	<input type="radio" name="review" id="radio3">
-	<div class="slider-desktop-controls left" id="prev"> < </div>
-	<div class="slider-desktop-controls right"  id="next"> > </div>
-	<div class="slider-container">	
-		<div class="slider-item">
-		<h2>Николай Петров</h2>
-		<div class="bio-info">25 лет, водитель трамвая</div>
-		<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-		</div>
-		<div class="slider-item">
-		<h2>Николай Петров</h2>
-		<div class="bio-info">25 лет, водитель трамвая</div>
-		<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-		</div>
-		<div class="slider-item">
-		<h2>Николай Петров</h2>
-		<div class="bio-info">25 лет, водитель трамвая</div>
-		<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-		</div>
-	</div>
-	<div class="slider-controls ">
-		<label for="radio1"></label>
-		<label for="radio2"></label>
-		<label for="radio3"></label>
-	</div>
-</section>
-
-<section class="price" id="slider-price">
-	<input type="radio" name="price" id="radio4" checked>
-	<input type="radio" name="price" id="radio5">
-	<input type="radio" name="price" id="radio6">
-	<div class="slider-container">
-
-		<table class="table-price support">
-			<tr>
-				<th> База <br> <span>1,99 USD </span></th>
-			</tr>
-			<tr>
-				<td>розовый фильтр </td>
-			</tr>
-			<tr>
-				<td>смайлики </td>
-			</tr>
-			<tr>
-				<td>комментарии</td>
-			</tr>
-			
-		</table>
-
-		<table class="table-price">
-			<tr>
-				<th> База <br> <span>1,99 USD </span></th>
-			</tr>
-			<tr>
-				<td class="yes">розовый фильтр </td>
-			</tr>
-			<tr>
-				<td class="no">смайлики </td>
-			</tr>
-			<tr>
-				<td class="no">комментарии</td>
-			</tr>
-			
-		</table>
-
-		<table class="table-price">
-			<tr>
-				<th class="hit"> Стандарт <br> <span>3,99 USD</span></th>
-			</tr>
-			<tr>
-				<td class="yes">розовый фильтр</td>
-			</tr>
-			<tr>
-				<td class="yes">смайлики</td>
-			</tr>
-			<tr>
-				<td class="no">комментарии</td>
-			</tr>
-			
-		</table>
-
-		<table class="table-price">
-			<tr>
-				<th> Анлим <br> <span> 9,99 USD </span></th>
-			</tr>
-			<tr>
-				<td class="yes">розовый фильтр </td>
-			</tr>
-			<tr>
-				<td class="yes">смайлики </td>
-			</tr>
-			<tr>
-				<td class="yes">комментарии </td>
-			</tr>
-			
-		</table>
-	</div>
-	<div class="slider-controls table-controls">
-			<label for="radio4"></label>
-			<label for="radio5"></label>
-			<label for="radio6"></label>
-		</div>
-</section>
-
-<section class="contacts">
-	<h1>Остались вопросы? <br> Свяжитесь с нами!</h1>
-	<div class="contacts-info">
-		<div class="call">
-			<h2>Звоните:</h2>
-			<span>+7 (812) 555-66-66</span>
-		</div>
-		<div class="write">	
-			<h2>Пишите:</h2>
-			<span>mail@htmlacademy.ru</span>
-		</div>
-		<div class="meet">
-			<h2>Приезжайте в гости:</h2>
-			<span>Санкт-Петербург <br>Невский проспект, д. 20</span>
-		</div>
-	</div>	
-</section>
-<section class="map">
-	
-	<div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 59.936337, lng: 30.321065},
-          zoom: 17,
-        });
-          var marker = new google.maps.Marker({
-          position: {lat: 59.93618, lng: 30.321},
-          map: map,
-          icon: {
-		url: "img/icon-map-marker.svg",
-		scaledSize: new google.maps.Size(60, 60)
-	} 
-});
-      
-      }
-
-      </script>
-	
-</section>
-<section class="footer">
+			<div class="form-rules-informer">
+				<span>* </span>&mdash; обязательные поля
+			</div>
+		</div>		
+		
+	</section>
+</form>
+<section class="footer concurs-footer">
 	
 	<a class="logo-footer">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -334,13 +199,9 @@
 		<a class="author" href="#"> Created by Stozen</a>
 	
 </section>
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/minscript.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2rUrL_KgjXVset90geVLBQwZENGq0s30&callback=initMap"
-    async defer>
-    	
-</script>
+
+
+<script src="js/minscript.js"></script>	
 </body>
 </html>
