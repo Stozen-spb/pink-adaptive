@@ -12,11 +12,9 @@ menu.classList.toggle("hidden");
 }
 	);
 
-function makeMenuHidden() {
-menu.classList.add("hidden");	
-	}
 
-window.onload = makeMenuHidden;
+
+
 
 
 /* перключние десктопного слайдера стрелочками */

@@ -520,8 +520,8 @@ section.contacts::after {
   border: 35px solid #fff;
   border-top: 100px solid #fff;
   border-bottom: 0;
-  border-left: solid 49vw transparent;
-  border-right: solid 49vw transparent;
+  border-left: solid 48vw transparent;
+  border-right: solid 48vw transparent;
   z-index: 20;
 }
 section.map {
